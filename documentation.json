@@ -51,6 +51,11 @@
                 "icon": "align-center-vertical"
               },
               {
+                "title": "Account Mapping",
+                "path": "account-mapping",
+                "icon": "lucide-map"
+              },
+              {
                 "title": "Features",
                 "path": "features",
                 "icon": "file-text"

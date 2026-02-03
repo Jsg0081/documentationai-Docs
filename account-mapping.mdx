@@ -1,0 +1,400 @@
+---
+title: Account Mapping
+description: Learn how to map trial balance accounts to IRS form lines, work with AI suggestions, custom lines, and validate totals on the Account Mapping page.
+---
+
+## What the Account Mapping page does
+
+The Account Mapping page is where you connect trial balance accounts to IRS form lines. You use it to:
+
+- Prepare accounts for tax reporting
+- Review how accounts roll up to form lines
+- Validate totals and proofs of work
+
+The page is divided into two main areas:
+
+- **Accounts pane (left):** lists all trial balance accounts and their mapping status.
+- **Form lines pane (right):** shows IRS form lines for the selected form and receives mappings.
+
+A header at the top controls which form you are mapping to and offers AI and reset tools.
+
+<Callout kind="info">
+
+You can revisit Account Mapping at any time while working on a client. Changes update your tax form rollups immediately.
+
+</Callout>
+
+## Header tools
+
+The header bar controls which tax form you are mapping and how mappings are created or cleared.
+
+### Supported form types
+
+<Expandable title="Supported tax forms" default-open="true">
+
+The Account Mapping page supports mapping to these IRS forms:
+
+- Form 1040
+- Form 1065
+- Form 1120
+- Form 1120S
+
+When you change the selected form, the available form lines in the right pane update to match that form.
+
+</Expandable>
+
+### Form selector
+
+Use the **Form selector** to choose which IRS form the mapping follows. Changing the form:
+
+- Updates all available form lines in the Form lines pane
+- Keeps your mapping workflow focused on a single form at a time
+
+### AI Suggest
+
+The **AI Suggest** tool automatically maps any **unmapped** accounts.
+
+- Only unmapped accounts are considered
+- Mapped accounts are left as-is
+- Progress is shown while AI runs (for example, accounts display "Mapping..." and animate)
+
+### Clear All
+
+The **Clear All** tool removes all existing mappings for the current form so you can restart from scratch.
+
+<Callout kind="danger">
+
+Use **Clear All** with caution. It clears **all** existing mappings for the current form. Only use it when you intentionally want to start over.
+
+</Callout>
+
+## Accounts pane (left side)
+
+The Accounts pane is your list of trial balance accounts and the starting point for mapping.
+
+### Finding and filtering accounts
+
+You can quickly narrow down which accounts you are working with.
+
+<Expandable title="Search and filter options" default-open="true">
+
+- **Search:** type an account number, name, or type to filter the list instantly.
+- **Filter tabs:** switch between:
+
+  - **All:** show every account
+  - **Mapped:** show only accounts that already have a mapping
+  - **Unmapped:** show only accounts that still need mapping
+
+</Expandable>
+
+### Selecting accounts
+
+You can select one or many accounts before you drag them to a form line.
+
+<Steps>
+
+<Step title="Select a single account" icon="check">
+
+Click an account row in the Accounts pane to select it.
+
+</Step>
+
+<Step title="Multi-select accounts" icon="plus">
+
+Use standard multi-select shortcuts:
+
+- Hold <kbd>Ctrl</kbd> (Windows) or <kbd>Cmd</kbd> (Mac) and click to add or remove individual accounts from the selection.
+- Press <kbd>Ctrl</kbd>+<kbd>A</kbd> (Windows) or <kbd>Cmd</kbd>+<kbd>A</kbd> (Mac) to select all visible accounts in the current view (including applied filters).
+
+</Step>
+
+<Step title="Why selection matters" icon="info">
+
+When you drag **any** selected account to a form line, **all selected accounts** are mapped together to that same form line.
+
+</Step>
+
+</Steps>
+
+### Mapping and unmapping by dragging
+
+Mapping is performed with drag and drop.
+
+<Steps>
+
+<Step title="Map accounts to a form line" icon="arrow-right">
+
+1. Select one or more accounts in the Accounts pane.
+2. Click and hold on one of the selected accounts.
+3. Drag the selection to a **mappable** form line in the Form lines pane.
+4. Drop the accounts on the line to assign them.
+
+</Step>
+
+<Step title="Unmap an account by dragging back" icon="minus">
+
+1. Locate a mapped account you want to unmap.
+2. Drag the account from its mapped location back over the Accounts pane.
+3. When the Accounts pane highlights in red, release to drop.
+4. The account is now unmapped.
+
+</Step>
+
+</Steps>
+
+### Mapping status indicators and AI progress
+
+Each mapped account shows status so you can see how mappings were created:
+
+- **Target line label:** which form line the account is mapped to
+- **AI / Manual badge:** whether the mapping was created by AI Suggest or manually
+- **Green checkmark:** confirms the account is successfully mapped
+
+When AI Suggest is running:
+
+- Accounts being processed show a "Mapping..." message
+- A visual animation indicates ongoing AI work
+
+## Form lines pane (right side)
+
+The Form lines pane shows the structure of the selected IRS form, including sections, line types, and mapping targets.
+
+### Sections and expansion
+
+Form lines are grouped into sections. You can expand or collapse each section using its header to focus on relevant areas of the form.
+
+### Line types and colors
+
+Form lines use color and type to signal how you can work with them.
+
+<Expandable title="Line types and meaning" default-open="true">
+
+Line types are color-coded:
+
+- **Mappable (black):** accepts mappings from accounts via drag and drop or AI Suggest.
+- **Subgroup (green):** represents a subgroup of lines. Often used as parents for sub-lines.
+- **Calculated (blue):** cannot be mapped directly; totals are computed from other lines.
+- **Manual / override (orange):** allows manual entry of a value instead of mapping accounts.
+
+</Expandable>
+
+### How to map to form lines
+
+Mapping to form lines is always done via drag and drop or AI Suggest.
+
+<Steps>
+
+<Step title="Map accounts to a mappable line" icon="arrow-right">
+
+1. In the Accounts pane, select one or more accounts.
+2. In the Form lines pane, identify a **mappable** (non-calculated) line.
+3. Drag your selected accounts onto that line.
+4. Drop to assign the accounts to that line.
+
+</Step>
+
+</Steps>
+
+<Callout kind="tip">
+
+Clicking a line **does not** map accounts. Mapping is done only by **dragging and dropping** or by using **AI Suggest**.
+
+</Callout>
+
+## Show Details and working with mapped accounts
+
+The **Show Details** toggle controls whether you can see the specific accounts under each mapped line.
+
+When **Show Details** is on:
+
+- Each line reveals its contributing accounts
+- You can see the account number, name, and value for each mapped account
+- You can drag accounts from one line to another to remap them directly from the details view
+
+This is especially useful as a **proof of what drives a line total** and when reviewing or adjusting mappings.
+
+## Custom lines (sub-lines)
+
+You can add custom sub-lines when you need more granularity under a parent form line.
+
+### Adding custom sub-lines
+
+There are two ways to add custom lines.
+
+<Steps>
+
+<Step title="Add a sub-line inline" icon="plus">
+
+1. Hover over the form line where you want a sub-line.
+2. Click the green **+** icon.
+3. Enter a **Code** and **Label** for the new sub-line.
+4. The new line appears immediately under the parent line.
+
+</Step>
+
+<Step title="Add a sub-line using Add Line" icon="plus">
+
+1. Click the **Add Line** button.
+2. Choose the **parent line** where the new sub-line should live.
+3. Enter a **Code** and **Label**.
+4. The custom line is added under the chosen parent.
+
+</Step>
+
+</Steps>
+
+### Editing and deleting custom lines
+
+Custom lines can be maintained directly in the Form lines pane:
+
+- **Edit:** click the pencil (edit) icon to change the Code or Label.
+- **Delete:** click the trash (delete) icon to remove the custom line.
+
+When you delete a sub-line:
+
+- The sub-line is removed from the form
+- Any mappings attached to that sub-line are also removed
+
+## Manual input lines
+
+Some lines are designated as manual input or override lines.
+
+You can recognize them because:
+
+- They are shown in **orange**
+- They have an edit icon
+
+To enter a manual value:
+
+<Steps>
+
+<Step title="Enter a manual value" icon="edit">
+
+1. Click the edit icon on the manual (orange) line.
+2. Enter the value you want to use.
+3. Save your changes.
+
+</Step>
+
+</Steps>
+
+Manual input values:
+
+- Are saved with your mapping
+- Are used in totals and calculations
+- Are helpful when items are not tied directly to any trial balance account
+
+## Calculated lines and proof of work
+
+Calculated lines summarize or derive values from other lines.
+
+Key behavior:
+
+- Displayed in **blue**
+- Marked with a **Calc** badge
+- **Cannot** accept direct mappings from accounts
+
+Click the **Calc** badge on a calculated line to:
+
+- See the formula used to compute the line
+- View the contributing lines that roll into the calculation
+- Access a proof-of-work breakdown showing the mapped accounts behind those contributing lines
+
+This proof-of-work helps you verify that calculated totals align with your trial balance.
+
+## Zoom and layout controls
+
+You can adjust how form lines are displayed for better readability.
+
+- **Zoom slider:** adjusts the scale of the Form lines pane, letting you zoom in for detail or zoom out for a broader view.
+- **Hide zeros:** hides form lines that have zero totals and no mappings, reducing visual noise so you can focus on active lines.
+
+## Summary totals
+
+Summary totals at the bottom of the Form lines pane update in real time as you map accounts, add manual entries, and adjust lines.
+
+<Expandable title="Summary totals by form type" default-open="true">
+
+For **Forms 1120 / 1120S / 1065**, you can see:
+
+- Total Assets
+- Total Liabilities
+- Total Equity
+- Total Income
+- Total Deductions
+- Net Income (Loss)
+
+For **Form 1040**, you can see:
+
+- Schedule C Net Profit
+- Schedule E Net Income
+- Schedule F Net Profit
+- Combined Net
+
+</Expandable>
+
+These summaries provide a quick sanity check that your mapped totals align with expectations.
+
+## Common issues and fixes
+
+Use this section to troubleshoot typical Account Mapping problems.
+
+<Expandable title="Common issues and how to resolve them" default-open="true">
+
+- **"All accounts are already mapped":**  
+  AI Suggest only maps **unmapped** accounts. If all visible accounts are already mapped, AI Suggest has nothing to do.
+
+- **Cannot drop on a line:**  
+  You may be trying to drop on a **calculated** (blue) line, which does not accept mappings. Drag to a **mappable** (black) line instead.
+
+- **Nothing appears under a line:**  
+  Turn on **Show Details** to see contributing accounts, or map accounts manually by dragging them from the Accounts pane.
+
+- **Cannot unmap an account:**  
+  Drag the mapped account back over the **Accounts pane**. When the pane highlights red, drop to unmap.
+
+</Expandable>
+
+## Quick reference
+
+Use these shortcuts to jump to key areas of the page.
+
+<Columns cols={3}>
+
+<Card title="Header tools & AI" href="#header-tools" icon="settings">
+
+Learn how to switch forms, run AI Suggest, and safely use Clear All.
+
+</Card>
+
+<Card title="Accounts pane basics" href="#accounts-pane-left-side" icon="database">
+
+Search, filter, select, and drag accounts to build your mappings.
+
+</Card>
+
+<Card title="Form lines & line types" href="#form-lines-pane-right-side" icon="file-text">
+
+Understand sections, line colors, and which lines accept mappings.
+
+</Card>
+
+<Card title="Details, custom lines & manual input" href="#show-details-and-working-with-mapped-accounts" icon="edit">
+
+Reveal contributing accounts, add sub-lines, and enter manual values.
+
+</Card>
+
+<Card title="Calculated lines & proofs" href="#calculated-lines-and-proof-of-work" icon="bar-chart">
+
+Review formulas and proof-of-work for calculated totals.
+
+</Card>
+
+<Card title="Troubleshooting" href="#common-issues-and-fixes" icon="alert-triangle">
+
+Fix common mapping issues and understand AI Suggest behavior.
+
+</Card>
+
+</Columns>
