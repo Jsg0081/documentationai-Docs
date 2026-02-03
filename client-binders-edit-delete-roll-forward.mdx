@@ -1,100 +1,186 @@
-# **Client Binders: Edit, Delete, Roll Forward**
+---
+title: 'Client Binders: Edit, Delete, Roll Forward'
+description: >-
+  Learn how to open, edit, delete, and roll forward client binders to manage
+  year-by-year engagement workspaces.
+---
+## Overview
 
-Binders are the client’s year folders shown on the client detail page. Each binder represents a fiscal year (or period) and opens into its own engagement workspace.
+Binders are the client's year folders shown on the client detail page. Each binder represents a fiscal year (or period) and opens into its own engagement workspace.
 
-## **Where To Find Binders**
+Use this page to quickly find, open, edit, delete, and roll forward binders.
 
-1. Open a client from the sidebar or dashboard.
+<Callout kind="info" collapsed="false">
+  Binders live on the client detail page. Each binder is scoped to a single client and fiscal year or accounting period.
+</Callout>
 
-2. Scroll to the Binders section (grid or table view).
+## Find and open binders
 
-You can toggle between tile view and table view using the view switcher.
+### Where to find binders
 
-## **Open A Binder**
+<Steps>
+  <Step title="Open the client" icon="folder" title-type="p">
+    Open a client from the sidebar or dashboard.
+  </Step>
 
-1. Click any binder card (tile view) or row (table view).
+  <Step title="Locate the Binders section" icon="monitor" title-type="p">
+    Scroll to the Binders section in the client detail page. You can toggle between tile view and table view using the view switcher.
+  </Step>
+</Steps>
 
-2. You will be taken to that binder’s engagement workspace.
+### Open a binder
 
-## **Edit A Binder**
+<Steps>
+  <Step title="Select the binder" icon="play-circle" title-type="p">
+    - In tile view, click any binder card
 
-You can edit a binder’s year, name, and accounting period.
+    - In table view, click any binder row
+  </Step>
 
-1. Find the binder in the list.
+  <Step title="Work in the engagement workspace" icon="code" title-type="p">
+    You will be taken to that binder's engagement workspace.
+  </Step>
+</Steps>
 
-2. Click the Edit icon (pencil).
+## Edit a binder
 
-3. Update the fields.
+You can edit a binder's year, name, and accounting period.
 
-4. Click Save.
+<Steps>
+  <Step title="Find the binder" icon="folder" title-type="p">
+    Find the binder you want to change in the Binders list.
+  </Step>
 
-Fields in the Edit dialog:
+  <Step title="Open the edit dialog" icon="edit" title-type="p">
+    Click the Edit icon (pencil).
+  </Step>
 
-1. Year: The fiscal year of the binder. Must be a number (e.g., 2025).
+  <Step title="Update fields" icon="settings" title-type="p">
+    Update the fields you need to change.
+  </Step>
 
-2. Name: Display name for the binder (optional).
+  <Step title="Save changes" icon="check-circle" title-type="p">
+    Click **Save**.
+  </Step>
+</Steps>
 
-3. Accounting Period From: Start date for the period (optional).
+<Expandable title="Edit dialog fields" default-open="true">
+  Fields in the Edit dialog:
 
-4. Accounting Period To: End date for the period (optional).
+  - **Year**: The fiscal year of the binder. Must be a number (for example, `2025`).
 
-## **Delete A Binder**
+  - **Name**: Display name for the binder (optional).
+
+  - **Accounting Period From**: Start date for the period (optional).
+
+  - **Accounting Period To**: End date for the period (optional).
+</Expandable>
+
+<Expandable title="Editing tips" default-open="false">
+  - If the **Year** field is not a valid number, the system will reject the change.
+
+  - Accounting period dates are optional but recommended for clarity.
+</Expandable>
+
+## Delete a binder
 
 Deleting a binder is permanent and cannot be undone.
 
-1. Find the binder in the list.
+<Callout kind="danger" collapsed="false">
+  **Permanent deletion**
 
-2. Click the Delete icon (trash).
+  - Deleting a binder is permanent and cannot be undone
 
-3. Confirm the deletion.
+  - Make sure you picked the correct binder and year before confirming
+</Callout>
 
-## **Roll Forward A Binder**
+<Steps>
+  <Step title="Find the binder" icon="folder" title-type="p">
+    Find the binder you want to delete in the Binders list.
+  </Step>
+
+  <Step title="Click delete" icon="trash" title-type="p">
+    Click the Delete icon (trash).
+  </Step>
+
+  <Step title="Confirm permanent deletion" icon="alert-triangle" title-type="p">
+    Carefully review the binder details, then confirm the deletion in the confirmation dialog.
+  </Step>
+</Steps>
+
+<Callout kind="tip" collapsed="false">
+  If you are unsure whether you will need the binder later, edit it instead of deleting to preserve history.
+</Callout>
+
+## Roll forward a binder
 
 Roll Forward creates a new binder for the next year using the current binder as a template.
 
-1. Find the binder you want to roll forward.
+<Steps>
+  <Step title="Choose the source binder" icon="folder" title-type="p">
+    Find the binder you want to roll forward in the Binders list.
+  </Step>
 
-2. Click the Roll Forward icon (fast‑forward).
+  <Step title="Open roll forward" icon="play-circle" title-type="p">
+    Click the Roll Forward icon (fast-forward).
+  </Step>
 
-3. Fill out the roll forward fields.
+  <Step title="Configure the new binder" icon="settings" title-type="p">
+    Fill out the roll forward fields for the new binder.
+  </Step>
 
-4. Click Roll Forward.
+  <Step title="Create the new binder" icon="check-circle" title-type="p">
+    Click **Roll Forward**. After a successful roll forward, SnappyTB will take you directly to the new binder.
+  </Step>
+</Steps>
 
-Fields in the Roll Forward dialog:
+<Expandable title="Roll forward dialog fields" default-open="true">
+  Fields in the Roll Forward dialog:
 
-1. Target Year: The fiscal year for the new binder (required).
+  - **Target Year**: The fiscal year for the new binder (required).
 
-2. Binder Name: Optional display name for the new binder.
+  - **Binder Name**: Optional display name for the new binder.
 
-3. Accounting Period From: Start date for the new period.
+  - **Accounting Period From**: Start date for the new period.
 
-4. Accounting Period To: End date for the new period.
+  - **Accounting Period To**: End date for the new period.
 
-5. Copy Account Mappings: Toggle to carry forward tax mappings.
+  - **Copy Account Mappings**: Toggle to carry forward tax mappings.
+</Expandable>
 
-What Roll Forward copies:
+<Expandable title="What roll forward copies" default-open="false">
+  What Roll Forward copies:
 
-- Chart of accounts.
+  - Chart of accounts
 
-- Perm File documents and folders.
+  - Perm File documents and folders
 
-- Tax mappings if Copy Account Mappings is enabled.
+  - Tax mappings if **Copy Account Mappings** is enabled
+</Expandable>
 
-What Roll Forward does not copy:
+<Expandable title="What roll forward does not copy" default-open="false">
+  What Roll Forward does not copy:
 
-- Trial balance values (start at zero).
+  - Trial balance values (start at zero)
 
-- Journal entries.
+  - Journal entries
 
-- Workpapers other than Perm File.
+  - Workpapers other than Perm File
+</Expandable>
 
-After a successful roll forward, SnappyTB will take you directly to the new binder.
+## Quick reference
 
-## **Tips And Notes**
+<Columns cols="3">
+  <Card title="Edit binders" href="#edit-a-binder" icon="edit" horizontal="false">
+    Update year, name, or accounting period for an existing binder.
+  </Card>
 
-- If the Year field is not a valid number, the system will reject the change.
+  <Card title="Delete binders" href="#delete-a-binder" icon="trash" horizontal="false">
+    Permanently remove a binder when you no longer need it.
+  </Card>
 
-- Accounting Period dates are optional but recommended for clarity.
-
-- If you’re unsure, edit instead of delete to preserve history.
+  <Card title="Roll forward binders" href="#roll-forward-a-binder" icon="folder" horizontal="false">
+    Create a new year's binder from an existing one, copying structure and settings.
+  </Card>
+</Columns>
 
