@@ -41,6 +41,10 @@
                 "icon": "circle-plus"
               },
               {
+                "title": "Client Binders: Edit, Delete, Roll Forward",
+                "path": "client-binders-edit-delete-roll-forward"
+              },
+              {
                 "title": "Features",
                 "path": "features",
                 "icon": "file-text"

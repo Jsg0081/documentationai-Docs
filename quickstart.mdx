@@ -1,15 +1,19 @@
 ---
 title: Getting Started with Snappytb
-description: Set up your Snappytb account, access the dashboard, and complete your first trial balance import and mapping in under 5 minutes.
+description: >-
+  Set up your Snappytb account, access the dashboard, and complete your first
+  trial balance import and mapping in under 5 minutes.
 ---
-
 ## Prerequisites
 
-<Callout kind="info" title="Before You Begin">
-To get started with Snappytb, ensure you have:
-- Beta access (request at [snappytb.com/auth/signup](https://www.snappytb.com/auth/signup))
-- A prepared trial balance file in CSV or Excel format
-- A modern web browser (Chrome, Firefox, or Safari recommended)
+<Callout kind="info" collapsed="false">
+  To get started with Snappytb, ensure you have:
+
+  - Beta access (request at [snappytb.com/auth/signup](https://www.snappytb.com/auth/signup))
+
+  - A prepared trial balance file in CSV or Excel format
+
+  - A modern web browser (Chrome, Firefox, or Safari recommended)
 </Callout>
 
 Snappytb streamlines trial balance management with AI-powered mapping to IRS categories. Follow these steps to import your first dataset and generate mappings.
@@ -17,49 +21,53 @@ Snappytb streamlines trial balance management with AI-powered mapping to IRS cat
 ## Step 1: Sign Up and Access the Dashboard
 
 1. Visit [snappytb.com/auth/signup](https://www.snappytb.com/auth/signup) and create your account.
+
 2. Verify your email and log in.
+
 3. You'll land on the dashboard, featuring:
+
    - Sidebar for projects and entities
+
    - Main area for imports and mappings
+
    - Top bar with export options and settings
 
-<Callout kind="tip">
-Save your login credentials securely. Enable two-factor authentication in account settings for added security.
+<Callout kind="tip" collapsed="false">
+  Save your login credentials securely. Enable two-factor authentication in account settings for added security.
 </Callout>
 
 ## Step 2: Create a New Project and Import Data
 
 <Steps>
-  <Step title="Create Project" icon="plus">
+  <Step title="Create Project" icon="plus" title-type="p">
     Click **New Project** in the dashboard sidebar.
-    
+
     Enter a project name like `Q4 2024 Trial Balance` and select your entity type (single or multi-entity).
   </Step>
-  
-  <Step title="Upload File" icon="upload">
+
+  <Step title="Upload File" icon="upload" title-type="p">
     Drag and drop your trial balance file or click **Import Trial Balance**.
-    
+
     Supported formats:
-    
+
     <Tabs>
       <Tab title="CSV" icon="file-text">
         Ensure your CSV has columns: `Account Number`, `Account Name`, `Debit`, `Credit`, `Date`.
-        
-````csv
-Account Number,Account Name,Debit,Credit,Date
-1001,Cash,50000.00,,2024-12-01
-2001,Accounts Payable,,25000.00,2024-12-01
-````
-        
+
+        ```csv
+        Account Number,Account Name,Debit,Credit,Date
+        1001,Cash,50000.00,,2024-12-01
+        2001,Accounts Payable,,25000.00,2024-12-01
+        ```
       </Tab>
-      
+
       <Tab title="Excel" icon="file-spreadsheet">
         Use `.xlsx` files with a sheet named `Trial Balance`. First row must be headers matching CSV format above.
       </Tab>
     </Tabs>
   </Step>
-  
-  <Step title="Review Import" icon="check-circle">
+
+  <Step title="Review Import" icon="check-circle" title-type="p">
     Snappytb normalizes data automatically. Review the preview table for accuracy, then click **Confirm Import**.
   </Step>
 </Steps>
@@ -68,12 +76,12 @@ Account Number,Account Name,Debit,Credit,Date
 
 Once imported, Snappytb suggests IRS category mappings based on account names and your history.
 
-<Columns cols={2}>
-  <Card title="Auto-Suggest" icon="zap">
+<Columns cols="2">
+  <Card title="Auto-Suggest" icon="zap" horizontal="false">
     AI analyzes accounts like `Cash` → `Form 1120 Line 1`.
   </Card>
-  
-  <Card title="Bulk Edit" icon="edit-3">
+
+  <Card title="Bulk Edit" icon="edit-3" horizontal="false">
     Select multiple accounts and apply rules in bulk.
   </Card>
 </Columns>
@@ -87,41 +95,45 @@ graph LR
 ```
 
 <Expandable title="Advanced Mapping Tips" default-open="false">
-- Use custom rules for recurring clients
-- Override suggestions for firm-specific categories
-- Preview consolidated balances for multi-entity projects
+  - Use custom rules for recurring clients
+
+  - Override suggestions for firm-specific categories
+
+  - Preview consolidated balances for multi-entity projects
 </Expandable>
 
 ## Verify and Export
 
 Preview your mapped trial balance. Export to CSV, Excel, or PDF via the top bar.
 
-<CodeGroup tabs="CSV,Excel">
-```csv
-Account Number,Account Name,Mapped Category,Debit,Credit
-1001,Cash,Form 1120 Line 1,50000.00,,
-```
-```excel
-// Excel export includes formulas for totals
-```
+<CodeGroup show-lines="true" tabs={[]}>
+  ```csv
+  Account Number,Account Name,Mapped Category,Debit,Credit
+  1001,Cash,Form 1120 Line 1,50000.00,,
+  ```
+
+  ```excel
+  // Excel export includes formulas for totals
+  ```
 </CodeGroup>
 
 ## Next Steps
 
-<Columns cols={3}>
-  <Card title="Multi-Entity Consolidation" icon="users" href="/docs/multi-entity">
+<Columns cols="3">
+  <Card title="Multi-Entity Consolidation" href="/docs/multi-entity" icon="users" horizontal="false">
     Combine balances across organizations.
   </Card>
-  
-  <Card title="Custom Rules" icon="settings" href="/docs/configuration">
+
+  <Card title="Custom Rules" href="/docs/configuration" icon="settings" horizontal="false">
     Set up firm-wide mapping rules.
   </Card>
-  
-  <Card title="Exports & Reports" icon="download" href="/docs/exports">
+
+  <Card title="Exports & Reports" href="/docs/exports" icon="download" horizontal="false">
     Generate close-ready journal entries.
   </Card>
 </Columns>
 
-<Callout kind="success">
-Congratulations! You've completed your first Snappytb workflow. Explore the dashboard for more features.
+<Callout kind="success" collapsed="false">
+  Congratulations! You've completed your first Snappytb workflow. Explore the dashboard for more features.
 </Callout>
+
