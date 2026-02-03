@@ -36,6 +36,11 @@
             "icon": "layers",
             "pages": [
               {
+                "title": "Adding a Client",
+                "path": "adding-a-client",
+                "icon": "circle-plus"
+              },
+              {
                 "title": "Features",
                 "path": "features",
                 "icon": "file-text"
