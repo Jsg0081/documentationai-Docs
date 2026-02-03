@@ -1,62 +1,126 @@
 ---
 title: Adding a Client
+description: Learn where to create a new client in SnappyTB, what each field means, and how to resolve common errors.
 ---
-/**Where To Add A Client**
 
-1. Dashboard: Click "Create First Client" (shown when no client is selected).
+## Where you can add a client
 
-2. Sidebar: In the "Clients" section, click the plus (+) icon.
+You can open the **Create New Client** dialog from two places:
 
-## **Steps To Add A New Client**
+<Steps>
 
-1. Open the "Create New Client" dialog using one of the options above.
+  <Step title="From the dashboard" icon="home">
 
-2. Fill in the client fields (see the field reference below).
+  - When no client is selected, click **Create First Client** on the dashboard.
 
-3. Click "Create Client".
+  </Step>
 
-After creation, SnappyTB routes you to the new client dashboard automatically.
+  <Step title="From the sidebar" icon="plus">
 
-## **Field Reference (What Each Field Means)**
+  - In the **Clients** section of the sidebar, click the **+** icon.
 
-1. Client Name (required)\
-   Client Name is the primary display name for the client. It appears in the sidebar, dashboard tiles, and client lists. Example: "ABC Corporation".
+  </Step>
 
-2. Client ID (optional)\
-   Client ID is a short internal identifier. It must be letters and numbers only and must be unique within your organization. Example: "ABC123". Use this for fast search, consistent naming, or internal integrations.
+</Steps>
 
-3. Company Legal Name (optional)\
-   Company Legal Name is the official legal entity name. Use this if the client operates under a DBA or trade name. Example: "ABC Corporation Inc.".
+## Steps to add a new client
 
-4. Tax ID / EIN (optional)\
-   Tax ID / EIN stores the client's tax identifier. The field accepts free-form input and may include dashes. Example: "12-3456789".
+<Steps>
 
-5. Fiscal Year End (optional)\
-   Fiscal Year End is the month and day that closes the client's fiscal year. You select a month-end date from a list. Example: "December 31" (stored as "12/31").
+  <Step title="Open the dialog">
 
-## **Validation Rules And Tips**
+  - Use one of the options above to open the **Create New Client** dialog.
 
-- Client Name is required.
+  </Step>
 
-- Client ID must be alphanumeric and unique per organization.
+  <Step title="Fill in client details">
 
+  - Enter values for the client fields.
+  - Refer to the field reference below if you are unsure what a field means.
+
+  </Step>
+
+  <Step title="Create the client">
+
+  - Click **Create Client**.
+  - After creation, SnappyTB routes you to the new client dashboard automatically.
+
+  </Step>
+
+</Steps>
+
+<Callout kind="info">
+
+All fields except **Client Name** can be added or updated later by editing the client.
+
+</Callout>
+
+## Field reference
+
+Use these details to decide what to enter in each field.
+
+<Expandable title="Client Name (required)" default-open="true">
+
+Client Name is the primary display name for the client. It appears in the sidebar, dashboard tiles, and client lists. Example: `ABC Corporation`.
+
+</Expandable>
+
+<Expandable title="Client ID (optional)" default-open="false">
+
+Client ID is a short internal identifier. It must be letters and numbers only and must be unique within your organization. Example: `ABC123`. Use this for fast search, consistent naming, or internal integrations.
+
+</Expandable>
+
+<Expandable title="Company Legal Name (optional)" default-open="false">
+
+Company Legal Name is the official legal entity name. Use this if the client operates under a DBA or trade name. Example: `ABC Corporation Inc.`.
+
+</Expandable>
+
+<Expandable title="Tax ID / EIN (optional)" default-open="false">
+
+Tax ID / EIN stores the client's tax identifier. The field accepts free-form input and may include dashes. Example: `12-3456789`.
+
+</Expandable>
+
+<Expandable title="Fiscal Year End (optional)" default-open="false">
+
+Fiscal Year End is the month and day that closes the client's fiscal year. You select a month-end date from a list. Example: `December 31` (stored as `12/31`).
+
+</Expandable>
+
+## Validation rules and tips
+
+<Callout kind="tip">
+
+Use these rules to avoid common errors when creating a client.
+
+</Callout>
+
+- **Client Name** is required.
+- **Client ID** must be alphanumeric and unique per organization.
 - All other fields are optional and can be added later by editing the client.
 
-## **After You Create A Client**
+## After you create a client
 
 - You are routed to the client dashboard.
-
 - The client appears in the sidebar and recent clients list.
+- You can edit the client later from the client context menu by choosing **Edit Client**.
 
-- You can edit the client later from the client context menu by choosing "Edit Client".
+## Troubleshooting
 
-## **Troubleshooting**
+<Expandable title="Common error messages" default-open="true">
 
-- "Client name is required": Add a value to Client Name.
+- **"Client name is required"**  
+  Add a value to **Client Name**.
 
-- "Client ID must be alphanumeric": Remove spaces or special characters.
+- **"Client ID must be alphanumeric"**  
+  Remove spaces or special characters from **Client ID** so it only contains letters and numbers.
 
-- "Client ID already in use": Choose a different Client ID or remove it.
+- **"Client ID already in use"**  
+  Choose a different **Client ID** or remove it.
 
-- "No active organization found": Make sure you are signed in and have an active organization selected.
+- **"No active organization found"**  
+  Make sure you are signed in and have an active organization selected.
 
+</Expandable>

@@ -1,0 +1,299 @@
+---
+title: "Trial Balance Screen"
+description: "Learn how to review, edit, and validate accounts, balances, and tax mappings in the Trial Balance screen."
+---
+
+## Overview
+
+The Trial Balance screen is where you review accounts, balances, journal entry (JE) impact, and tax mapping for a client. From here you can:
+
+- Search and filter accounts
+- Edit account numbers and names inline
+- Add accounts and journal entries
+- Run cleanup tools on imported data
+- Switch between flat and mapped (tax) views
+- Drill into deltas and account details
+
+Use this page as a tour of the screen layout, tools, and common troubleshooting patterns.
+
+<Callout kind="info">
+
+If you have not imported or created any accounts yet, the Trial Balance screen will be empty. You can add accounts manually or import a trial balance before using most tools.
+
+</Callout>
+
+## Layout overview
+
+The Trial Balance screen has two main areas:
+
+- **Top controls** with search, tools, actions, and view toggles
+- **The trial balance grid** with accounts, balances, and totals
+
+You can switch between:
+
+- **Flat View**: a traditional trial balance grid.
+- **Mapped View**: accounts grouped by tax mapping categories.
+
+<Steps>
+
+  <Step title="Use the top controls" icon="settings">
+
+  - Adjust your view (Flat vs Mapped).
+  - Run tools like **Clean Up**.
+  - Add new accounts or journal entries.
+  - Apply search and filters (for example, Hide Zeros).
+
+  </Step>
+
+  <Step title="Review the trial balance grid" icon="table">
+
+  - Scan account-level balances and deltas.
+  - Edit account numbers and names inline.
+  - Drill into non-zero deltas for detailed journal entries.
+  - Confirm totals and tax return checks at the bottom.
+
+  </Step>
+
+</Steps>
+
+## Search and filtering
+
+The top-left search and filters help you quickly narrow down the grid.
+
+- **Search box**: filters accounts by number, name, or type.
+- **Hide Zeros** button: hides rows where all columns are zero, so you only see active accounts.
+
+<Callout kind="tip">
+
+Use **Hide Zeros** after you post adjustments or reclasses to focus on accounts that changed or still require review.
+
+</Callout>
+
+## Editing accounts inline
+
+You can edit account numbers and names directly from the grid without leaving the Trial Balance screen.
+
+<Steps>
+
+  <Step title="Edit an account number or name" icon="edit">
+
+  - Click the **Account #** or **Account Name** cell you want to change.
+  - Type the new value.
+  - Press **Enter** to save, or **Esc** to cancel.
+
+  </Step>
+
+  <Step title="Respect account number rules" icon="alert-triangle">
+
+  Rules for account numbers:
+
+  - Account numbers must be **unique**.
+  - If you enter a duplicate number, the grid shows a warning.
+  - Resolve the warning by choosing a different number or adjusting the conflicting account.
+
+  <Callout kind="danger">
+
+  If you see an **account number already chosen** warning, pick a different number or delete/renumber the existing account. Keeping duplicate numbers can cause confusion in reporting and tax mapping.
+
+  </Callout>
+
+  </Step>
+
+</Steps>
+
+## Add accounts and journal entries
+
+The top-right actions let you grow and adjust the trial balance as you work.
+
+- **Add Account**: creates a new account row in the grid.
+- **Add JE**: opens the Journal Entry dialog so you can post adjustments.
+- **Journal Entry Summary**: appears when entries exist and shows a summary of JE impact on the trial balance.
+
+Use these actions as you refine the imported data, add missing accounts, and post adjustments or reclasses.
+
+## Clean Up tool
+
+The **Clean Up** button runs an automated pass on your accounts to normalize imported data.
+
+<Steps>
+
+  <Step title="Run Clean Up" icon="play-circle">
+
+  - Click **Clean Up** from the top controls.
+  - The system normalizes account numbers and names.
+  - A progress indicator appears while cleanup runs.
+  - When finished, the grid updates in place with cleaned-up accounts.
+
+  </Step>
+
+  <Step title="When to use Clean Up" icon="info">
+
+  Use the Clean Up tool **after importing messy trial balances**, especially when:
+
+  - Account numbers have inconsistent formats.
+  - Account names contain extra prefixes, suffixes, or formatting.
+  - You want a cleaner, standardized chart of accounts before mapping or review.
+
+  </Step>
+
+</Steps>
+
+## Flat View (standard grid)
+
+Flat View shows the traditional trial balance grid with all account-level columns and deltas.
+
+<Expandable title="Flat View columns" default-open="true">
+
+Columns in Flat View include:
+
+- **Account #**
+- **Account Name**
+- **Type**
+- **Unadjusted**
+- **Adjusting Δ**
+- **Adjusted**
+- **Reclass Δ**
+- **Final**
+- **Tax Δ**
+- **Tax**
+
+</Expandable>
+
+<Expandable title="Clickable deltas and drill-down" default-open="true">
+
+Certain delta columns are clickable when they are non-zero:
+
+- **Adjusting Δ**
+- **Reclass Δ**
+- **Tax Δ**
+
+When a delta is **non-zero**, you can click it to open the detailed JE view for that account. This lets you:
+
+- See which journal entries contribute to the delta.
+- Confirm the direction and amount of each change.
+- Trace adjustments, reclasses, and tax-only entries back to their source.
+
+If a delta is zero, the cell is not clickable.
+
+</Expandable>
+
+## Totals and tax return check
+
+At the bottom of the grid you will find summary rows and a tax return check section that help you confirm the trial balance is complete and tax-ready.
+
+<Expandable title="Totals and summary rows" default-open="true">
+
+The bottom of the grid includes:
+
+- **TOTALS** row: shows totals across all columns.
+- **NET INCOME** row: calculated as Revenue minus Expenses.
+
+Use these to confirm your overall balances and that net income is flowing as expected.
+
+</Expandable>
+
+<Expandable title="Tax Return Check details" default-open="false">
+
+The **Tax Return Check** section shows:
+
+- **Total Assets**
+- **Total Liabilities**
+- **Total Equity** (including Revenue and Expenses)
+- **Total Liabilities + Equity** (a key balance check)
+
+These values help you verify that:
+
+- The trial balance is balanced.
+- The tax mapping is consistent with the underlying accounting equation.
+- You are ready to move from trial balance review to tax return preparation.
+
+</Expandable>
+
+## Mapped View (tax mapping view)
+
+Mapped View groups accounts by tax return lines based on their tax mapping. This gives you a tax-focused view of the trial balance.
+
+- Accounts are organized into tax mapping categories.
+- You can still use **Search** and **Hide Zeros** in this view.
+- It is useful for tax prep and review, especially when you want to see which accounts roll up to each tax line.
+
+Switch between **Flat View** and **Mapped View** depending on whether you are doing accounting-focused cleanup or tax-focused review.
+
+## Row click behavior
+
+Clicking on a row (outside of an editable cell) opens more detail for that account.
+
+- Clicking directly on an editable cell (Account # or Account Name) starts inline editing.
+- Clicking elsewhere on the row opens the account details panel or drill-down view.
+- Use row clicks to quickly jump from the grid into deeper account-level review.
+
+## Common troubleshooting
+
+<Expandable title="Troubleshooting messages and behaviors" default-open="true">
+
+Common issues you may see on the Trial Balance screen include:
+
+- **Account number already chosen**
+
+  - Cause: You entered a number that is already assigned to another account.
+  - Fix: Choose a different account number, or delete/renumber the existing account.
+
+- **No accounts found**
+
+  - Cause: The grid is empty or filtered down to zero results.
+  - Fix: Import a trial balance, add accounts manually, or clear search/filters (for example, uncheck Hide Zeros).
+
+- **Deltas do not open**
+
+  - Cause: The delta you clicked is zero, so there are no underlying entries to show.
+  - Fix: Make sure the delta is non-zero before clicking. If needed, post or import journal entries that affect that account.
+
+</Expandable>
+
+## Quick reference
+
+Use these links to jump to key parts of the Trial Balance screen documentation.
+
+<Columns cols={3}>
+
+  <Card title="Search & filters" href="#search-and-filtering" icon="search">
+
+  Learn how to search by account number, name, or type, and use **Hide Zeros** to focus on active accounts.
+
+  </Card>
+
+  <Card title="Inline editing" href="#editing-accounts-inline" icon="edit">
+
+  See how to change account numbers and names directly in the grid, including duplicate number warnings.
+
+  </Card>
+
+  <Card title="Add accounts & JEs" href="#add-accounts-and-journal-entries" icon="plus">
+
+  Use Add Account, Add JE, and the Journal Entry Summary to build and adjust your trial balance.
+
+  </Card>
+
+</Columns>
+
+<Columns cols={3}>
+
+  <Card title="Clean Up tool" href="#clean-up-tool" icon="settings">
+
+  Normalize imported trial balances by cleaning up account numbers and names in place.
+
+  </Card>
+
+  <Card title="Flat vs Mapped View" href="#flat-view-standard-grid" icon="folder">
+
+  Compare the standard grid with the tax-focused mapped view and learn when to use each.
+
+  </Card>
+
+  <Card title="Totals & checks" href="#totals-and-tax-return-check" icon="bar-chart">
+
+  Review totals, net income, and tax return checks to confirm the trial balance is balanced and tax-ready.
+
+  </Card>
+
+</Columns>

@@ -36,6 +36,11 @@
             "icon": "layers",
             "pages": [
               {
+                "title": "Trial Balance Screen",
+                "path": "trial-balance-screen",
+                "icon": "align-center-vertical"
+              },
+              {
                 "title": "Adding a Client",
                 "path": "adding-a-client",
                 "icon": "circle-plus"
