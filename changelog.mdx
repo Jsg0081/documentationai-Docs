@@ -1,0 +1,128 @@
+---
+title: Changelog
+description: Track the latest updates, new features, and improvements in Snappytb to stay informed about version changes.
+---
+
+## Recent Updates
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added AI-powered tax mapping suggestions based on your firm's history and custom rules.
+- Introduced multi-entity consolidation for combining trial balances across organizations.
+- New streaming performance optimizations for processing 10k+ rows with real-time feedback.
+
+## Improvements
+
+- Enhanced automated TB normalization with better account name standardization.
+- Improved export options including direct PDF generation for close-ready reports.
+- Responsive UI updates for better experience on mobile and large monitors.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Secure row-level security and least-privilege access controls for client data.
+- One-click exports to CSV, Excel, and PDF formats.
+- Import support for additional trial balance formats.
+
+## Bug Fixes
+
+- Fixed issues with account mapping persistence during multi-entity imports.
+- Resolved performance bottlenecks in large dataset reviews.
+- Corrected export errors for certain IRS category mappings.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Core trial balance import and IRS Form category mapping.
+- Automated cleanup and normalization of account names and numbers.
+- Basic dashboard for review and export workflows.
+
+## Breaking Changes
+
+- Updated API endpoints for authentication; migrate to new `{API_KEY}` format.
+- Removed legacy CSV import parser in favor of AI-enhanced version.
+
+</Update>
+
+## Upgrade Instructions
+
+Follow these steps to upgrade Snappytb to the latest version.
+
+<Steps>
+  <Step title="Backup Data" icon="database">
+
+    Export your current trial balances and mappings.
+
+````bash
+# Use the export CLI
+snappytb export --all --format=json > backup.json
+````
+
+  </Step>
+  <Step title="Update Package" icon="download">
+
+    Install the latest version via your package manager.
+
+    <CodeGroup tabs="npm,yarn">
+````bash
+npm install snappytb@latest
+````
+````bash
+yarn add snappytb@latest
+````
+    </CodeGroup>
+
+  </Step>
+  <Step title="Run Migrations" icon="settings">
+
+    Apply database migrations if applicable.
+
+````bash
+snappytb migrate
+````
+
+  </Step>
+  <Step title="Verify" icon="check-circle">
+
+    Test imports and mappings to ensure compatibility.
+
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+Check the [release notes](https://github.com/snappytb/releases) for any version-specific migration steps.
+</Callout>
+
+## Upcoming Roadmap
+
+Discover what's coming next to Snappytb.
+
+<Columns cols={3}>
+  <Card title="Q4 2024" icon="zap" href="#">
+    Advanced AI integrations and webhook support for real-time notifications.
+  </Card>
+  <Card title="Q1 2025" icon="trending-up" href="#">
+    Full audit trail logging and compliance reporting tools.
+  </Card>
+  <Card title="Q2 2025" icon="shield" href="#">
+    Enterprise SSO and advanced multi-org permissions.
+  </Card>
+</Columns>
+
+<Expandable title="Detailed Roadmap" default-open="false">
+
+Stay tuned for beta access announcements. Priority features include:
+
+- Integration with popular accounting software like QuickBooks and Xero.
+- Custom rule engines for firm-specific tax mapping.
+- Collaborative review workflows for teams.
+
+</Expandable>
