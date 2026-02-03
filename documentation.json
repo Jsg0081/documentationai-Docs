@@ -56,6 +56,11 @@
                 "icon": "lucide-map"
               },
               {
+                "title": "Files",
+                "path": "files",
+                "icon": "files"
+              },
+              {
                 "title": "Features",
                 "path": "features",
                 "icon": "file-text"
