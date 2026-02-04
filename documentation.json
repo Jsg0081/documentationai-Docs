@@ -36,8 +36,25 @@
             "icon": "layers",
             "pages": [
               {
-                "title": "Audit Log",
-                "path": "audit-log"
+                "group": "Admin Functions",
+                "pages": [
+                  {
+                    "title": "Audit Log",
+                    "path": "audit-log",
+                    "icon": "lucide-file-pen-line"
+                  },
+                  {
+                    "title": "Managing Your Team",
+                    "path": "managing-your-team",
+                    "icon": "lucide-users"
+                  },
+                  {
+                    "title": "Deleting Review Comments",
+                    "path": "deleting-review-comments",
+                    "icon": "alert-circle"
+                  }
+                ],
+                "icon": "activity-square"
               },
               {
                 "title": "Adding a Client",
