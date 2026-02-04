@@ -1,0 +1,276 @@
+---
+title: Org Chart
+description: Learn how to visualize a client&apos;s entities, ownership, and relationships using the Org Chart canvas.
+---
+
+## Overview
+
+The Org Chart gives you a visual map of a client&apos;s legal entities, ownership structure, and relationships. It is a fast way to confirm who owns what, how entities connect, and where percentages flow.
+
+Use the Org Chart to:
+
+- Add entities as nodes
+- Connect them to show relationships
+- Display ownership percentages
+- Keep everything organized for review and communication
+
+<Expandable title="When to use the Org Chart" default-open="true">
+
+Org Charts are especially useful when:
+
+- Ownership is complex  
+  Multi-entity structures are difficult to interpret from spreadsheets. A chart makes relationships obvious at a glance.
+
+- You are preparing tax workpapers  
+  Clear ownership helps validate consolidation logic, related-party disclosures, and tax positions.
+
+- You need to communicate structure clearly  
+  Charts are client-friendly and useful for reviews, partner sign-off, or team handoffs.
+
+- You are onboarding a new team member  
+  Instead of walking through every file, the chart gives instant context.
+
+</Expandable>
+
+<Callout kind="info">
+
+You must have a client selected and a client binder open to use the Org Chart page.
+
+</Callout>
+
+## Getting started
+
+Use these steps to open and access the Org Chart canvas.
+
+<Steps>
+
+  <Step title="Open a client binder" icon="folder">
+
+  1. From the main workspace, select a client.
+  2. Open that client&apos;s binder.
+
+  </Step>
+
+  <Step title="Navigate to the Org Chart tab" icon="circle-dot-dashed">
+
+  1. In the binder, go to the **Org Chart** tab.
+  2. If no chart exists yet, you will see a blank canvas.
+
+  </Step>
+
+</Steps>
+
+## Working with nodes (entities and owners)
+
+Nodes represent companies, entities, or owners. You can create, edit, move, and delete nodes on the canvas.
+
+### Create a new node
+
+<Steps>
+
+  <Step title="Add an entity or owner" icon="plus">
+
+  1. Click **New Node**.
+  2. Enter the **entity name**.
+  3. Optionally add a **percentage** (ownership or interest).
+  4. Choose a **shape**.
+  5. Choose a **color**.
+  6. Click **Create**.
+  7. The node appears on the canvas.
+
+  </Step>
+
+</Steps>
+
+<Expandable title="Available node shapes">
+
+You can choose from these shapes to visually differentiate node types:
+
+- Rectangle
+- Rounded
+- Pill
+- Circle
+
+Use shapes and colors together to group similar entities or highlight special roles.
+
+</Expandable>
+
+### Edit an existing node
+
+<Steps>
+
+  <Step title="Open node for editing" icon="edit">
+
+  1. On the canvas, **double-click** a node.
+  2. Update the **name**, **percentage**, **shape**, or **color** as needed.
+  3. Click **Save** to apply your changes.
+
+  </Step>
+
+</Steps>
+
+<Callout kind="tip">
+
+Double-clicking a node is the quickest way to edit it.
+
+</Callout>
+
+### Delete a node
+
+<Steps>
+
+  <Step title="Remove a node from the chart" icon="trash">
+
+  1. Double-click the node you want to remove.
+  2. Click **Delete** to confirm.
+
+  </Step>
+
+</Steps>
+
+<Callout kind="alert">
+
+Deleting a node also removes any connected lines and relationships. Review the node&apos;s connections before you delete it.
+
+</Callout>
+
+### Move and arrange nodes
+
+You can drag nodes anywhere on the canvas. Positions are saved automatically so your layout stays consistent.
+
+Use this to organize:
+
+- Parent entities above
+- Subsidiaries below
+- Owners to the left, operating entities to the right
+
+## Creating and managing relationships
+
+Links (edges) show relationships between nodes, such as ownership chains or parent-subsidiary connections.
+
+### Create ownership links
+
+<Steps>
+
+  <Step title="Connect two nodes" icon="zap">
+
+  1. On the canvas, start from the source node.
+  2. Drag from that node toward the target node.
+  3. Drop onto the target node.
+  4. A line appears, representing the relationship between them.
+
+  </Step>
+
+</Steps>
+
+Use these links to represent:
+
+- Ownership chains
+- Parent-subsidiary relationships
+- Operating structure flows
+
+### Delete relationships
+
+To remove an existing relationship:
+
+- Click the line and delete it.
+- Or select the line and press **Delete** (if supported by your browser).
+
+<Callout kind="danger">
+
+Deleting a relationship removes that connection from the chart. It does not delete the underlying nodes, but it can change how ownership flows appear, so review before removing key links.
+
+</Callout>
+
+## Percentage field
+
+The percentage field is optional and is displayed beneath the node label.
+
+Use it for:
+
+- Ownership percentages
+- Economic interest
+- Voting control percentages
+
+Example usages:
+
+- `ABC Holdings` with `75%`
+- `John Smith` with `25%`
+
+Only enter percentages when they are known and confirmed for the entity or owner.
+
+## Visual tools
+
+The Org Chart includes built-in tools to help you work with large or complex structures:
+
+- **Mini-map**: A small overview in the corner that helps you see and navigate large charts.
+- **Zoom and pan controls**: Adjust your view to focus on specific parts of the structure or step back for a full overview.
+- **Grid background**: Helps you align nodes and keep the chart visually clean.
+
+These tools make it easier to manage extensive org charts without losing context.
+
+## Best practices
+
+<Expandable title="Suggested layout and style practices" default-open="true">
+
+To keep charts readable and reliable:
+
+- Use **consistent colors** for related entities.
+- Put **holding entities** above **operating entities**.
+- Use **percentages only when confirmed**.
+- Keep charts clean and focused. For very complex structures, split into logical sections when needed.
+
+</Expandable>
+
+## Quick summary
+
+The Org Chart is your visual map of a client&apos;s structure:
+
+- Add entities and owners as nodes.
+- Connect them to show relationships and flows.
+- Display ownership or interest percentages as needed.
+- Use layout, shapes, colors, and built-in tools to keep everything organized for review.
+
+## Quick reference
+
+Use these links to jump to common tasks and concepts on this page.
+
+<Columns cols={3}>
+
+  <Card title="Getting started" href="#getting-started" icon="home">
+
+  Learn how to open a client binder and access the Org Chart canvas.
+
+  </Card>
+
+  <Card title="Create & edit nodes" href="#working-with-nodes-entities-and-owners" icon="edit">
+
+  Add new entities or owners, edit existing nodes, and control shapes and colors.
+
+  </Card>
+
+  <Card title="Create relationships" href="#creating-and-managing-relationships" icon="zap">
+
+  Connect nodes with lines to show ownership chains and structure.
+
+  </Card>
+
+  <Card title="Percentages" href="#percentage-field" icon="bar-chart">
+
+  Use the percentage field to display ownership, economic interest, or voting control.
+
+  </Card>
+
+  <Card title="Visual tools" href="#visual-tools" icon="monitor">
+
+  Use the mini-map, zoom, pan, and grid to manage complex charts.
+
+  </Card>
+
+  <Card title="Best practices" href="#best-practices" icon="check-circle">
+
+  Follow layout and styling tips to keep your org charts clear and reliable.
+
+  </Card>
+
+</Columns>

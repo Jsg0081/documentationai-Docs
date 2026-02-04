@@ -61,6 +61,11 @@
                 "icon": "files"
               },
               {
+                "title": "Org Chart",
+                "path": "org-chart",
+                "icon": "circle-dot-dashed"
+              },
+              {
                 "title": "Features",
                 "path": "features",
                 "icon": "file-text"
