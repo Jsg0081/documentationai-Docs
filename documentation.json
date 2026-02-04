@@ -36,6 +36,10 @@
             "icon": "layers",
             "pages": [
               {
+                "title": "Audit Log",
+                "path": "audit-log"
+              },
+              {
                 "title": "Adding a Client",
                 "path": "adding-a-client",
                 "icon": "circle-plus"

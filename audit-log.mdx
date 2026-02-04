@@ -1,0 +1,214 @@
+---
+title: Audit Log
+description: Learn how to find, read, and use the audit log to track all activity inside a client binder.
+---
+
+## Overview
+
+The audit log provides a complete history of activity inside a client binder. It tracks who did what, when it happened, and details of the change so you can review work, answer questions, and support compliance.
+
+<Callout kind="info">
+
+Only Admin users can view the Audit Log tab in a client binder. If you do not have Admin permissions, you will see a permission message instead of the log.
+
+</Callout>
+
+### Benefits and use cases
+
+<Expandable title="Why the audit log matters" default-open="true">
+
+Audit logs are critical for:
+
+- **Accountability**: See exactly who changed a balance, uploaded a file, or signed off.
+- **Review and quality control**: Quickly identify when adjustments were made and by whom.
+- **Client or partner questions**: If something looks off, you can trace the exact action.
+- **Compliance and documentation**: Audit logs provide a defensible trail of work performed.
+
+</Expandable>
+
+## Where to find the audit log
+
+<Steps>
+
+  <Step title="Open a client binder" icon="folder">
+
+  Open the specific client binder where you want to review activity.
+
+  </Step>
+
+  <Step title="Go to the Audit Log tab" icon="book-open">
+
+  Switch to the **Audit Log** tab. This tab is visible for Admin users.
+
+  </Step>
+
+</Steps>
+
+## What you will see
+
+Each row in the audit log shows:
+
+- **Time**: Date and time of the event.
+- **User**: Name and email of the user who performed the action.
+- **Action**: Event type label.
+- **Details**: Short summary of what changed.
+
+You can click any row to open full details for that event.
+
+### Action types and colors
+
+<Expandable title="Action type color legend" default-open="true">
+
+Actions are color-coded so you can scan the log quickly:
+
+- **Green**: Created, added, uploaded, imported.
+- **Blue**: Updated, renamed, moved.
+- **Red**: Deleted, removed, cleared.
+- **Yellow**: Lock or unlock actions.
+- **Purple**: Signoff actions.
+- **Gray**: Other system actions.
+
+</Expandable>
+
+## Reading an entry
+
+<Steps>
+
+  <Step title="Review the key fields" icon="search">
+
+  Each entry in the audit log includes:
+
+  - **Timestamp**: When the action happened.
+  - **Actor**: The user who performed the action.
+  - **Action label**: A specific event name, such as `account.update`.
+  - **Summary**: A short description of the change.
+
+  </Step>
+
+  <Step title="Open the entry for more detail" icon="arrow-right">
+
+  Click the row to open the full detail panel and see more information about what changed.
+
+  </Step>
+
+</Steps>
+
+<Callout kind="tip">
+
+To understand exactly what changed, open a log row and review the full JSON payload in the detail panel.
+
+</Callout>
+
+## Viewing full details
+
+<Steps>
+
+  <Step title="Open the detail panel" icon="book-open">
+
+  Click any log row. A side panel opens showing a more complete view of the event.
+
+  </Step>
+
+  <Step title="Review the action metadata" icon="info">
+
+  In the panel, you will see:
+
+  - The exact action name.
+  - The summary of the event.
+
+  </Step>
+
+  <Step title="Inspect the JSON payload" icon="code">
+
+  The panel also includes the full payload in JSON. This is useful for:
+
+  - Identifying old values versus new values.
+  - Tracking file or folder changes.
+  - Reviewing signoff events.
+
+  </Step>
+
+</Steps>
+
+## Refresh and pagination
+
+<Steps>
+
+  <Step title="Refresh the log" icon="refresh-ccw">
+
+  Use **Refresh** to reset the view and reload the most recent events.
+
+  </Step>
+
+  <Step title="Load older activity" icon="chevron-right">
+
+  Use **Load More** to see older activity beyond the current page.
+
+  </Step>
+
+  <Step title="Understand page size" icon="list">
+
+  The audit log displays **50 events per page** by default.
+
+  </Step>
+
+</Steps>
+
+## Permissions and access
+
+Only Admin users can view the audit log. If you do not have access:
+
+- You will see a permission message when you try to open the Audit Log tab.
+- Ask an Admin in your organization to grant you Admin permissions if you need to review audit history.
+
+## Common issues
+
+<Expandable title="Common issues and how to interpret them" default-open="true">
+
+- **“Admin access required”**: You need Admin permissions to view the Audit Log tab.
+- **No activity yet**: The log starts filling as users take actions in the client binder. A new or unused binder may show no entries yet.
+- **Details unclear**: Click the log entry and review the full JSON payload in the detail panel to understand exactly what changed.
+
+</Expandable>
+
+## Quick reference
+
+<Columns cols={3}>
+
+  <Card title="Overview and benefits" href="#overview" icon="info">
+
+  Learn what the audit log tracks and when to use it.
+
+  </Card>
+
+  <Card title="Find the audit log" href="#where-to-find-the-audit-log" icon="folder">
+
+  Open the correct client binder and navigate to the Audit Log tab.
+
+  </Card>
+
+  <Card title="Action types and colors" href="#action-types-and-colors" icon="zap">
+
+  Understand color-coding for created, updated, deleted, signoff, and system events.
+
+  </Card>
+
+  <Card title="Read entries and details" href="#reading-an-entry" icon="search">
+
+  See how to interpret timestamps, actors, labels, and summaries.
+
+  </Card>
+
+  <Card title="JSON payload details" href="#viewing-full-details" icon="code">
+
+  Open a row to inspect the full JSON payload for precise change history.
+
+  </Card>
+
+  <Card title="Refresh, pagination, and access" href="#refresh-and-pagination" icon="settings">
+
+  Review how refresh, load more, permissions, and common messages work.
+
+  </Card>
+
+</Columns>
