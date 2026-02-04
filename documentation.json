@@ -1,6 +1,6 @@
 {
   "name": "Snappytb",
-  "initialRoute": "introduction",
+  "initialRoute": "help-center/faq/getting-started",
   "colors": {
     "light": {
       "brand": "#1D62E5"
@@ -173,5 +173,8 @@
         ]
       }
     ]
-  }
+  },
+  "template": "atlas",
+  "logo-dark": "https://blob-cdn.documentation.ai/org-002f8f1e-90ca-4b86-aee6-474a8db6ed72/doc-b51b0d4c-3b98-419f-ac78-fd4d2fa13be8/1770173267010-77xt0rjwxms-image--13-.png?q=85&fm=auto&auto=compress%2Cformat",
+  "logo-light": "https://blob-cdn.documentation.ai/org-002f8f1e-90ca-4b86-aee6-474a8db6ed72/doc-b51b0d4c-3b98-419f-ac78-fd4d2fa13be8/1770173214873-vb0p9y0r4lf-snappy--1-.svg?q=85&fm=auto&auto=compress%2Cformat"
 }
